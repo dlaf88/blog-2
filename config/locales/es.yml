@@ -6,6 +6,19 @@ es:
       olderposts: "Articulos antiguos"
     show:
       notice: "Eres ok."
+  about:
+    show:
+      h1: "Acerca de Diego"
+      p1: "Diego Lafuente es un abogado en New Jersey y el fundador de Abogadazo Inc.. El se graduó de la Escuela de Derecho Columbia  Law School. Le gusta correr , programación, y la lectura de los temas relacionados con emprendimiento."
+      p2: "Diego nació en Ecuador, pero ha estado viviendo en los Estados Unidos desde los cinco años. Si desea ponerse en contacto con él , rellene el formulario en la página de contacto."
+    contact: 
+      h1: "Ponte en Contacto"
+      subh1: "¿Tienes alguna pregunta ? Tengo respuestas (tal vez)."
+      p1: "¿Quieres ponerte en contacto? Rellena el siguiente formulario para enviarme un mensaje y voy a tratar de contestar dentro de 24 horas!"
+      name: "Nombre"
+      email: "Email"
+      phone: "telefono"
+      message: "Mensaje"
   layouts:
    application:
      navbar:

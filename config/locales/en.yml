@@ -27,7 +27,19 @@ en:
       olderposts: "Older Posts"
     show:
       notice: "You were successful"
-        
+  about:
+    show:
+      h1: "About Me"
+      p1: "Diego Lafuente is the founder of Abogadazo, Inc. and a lawyer in New Jersey.  He is a graduate of Columbia Law School. He enjoys running, programming, and reading topics related to entrepreneurship."
+      p2: "Diego was born in Ecuador but has been living in the United States since the age of 5. If you want to contact him please fill out the form in the contact page."
+    contact: 
+      h1: "Contact Me"
+      subh1: "Have questions? I have answers (maybe)."
+      p1: "Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!"
+      name: "Name"
+      email: "Email"
+      phone: "telephone"
+      message: "Message"
   layouts:
     application:
       navbar:
