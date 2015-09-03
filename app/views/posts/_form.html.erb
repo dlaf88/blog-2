@@ -1,0 +1,36 @@
+<%= form_for(@post) do |f| %>
+<div class='container'>
+   <div class="row control-group">
+     <div class="form-group col-xs-12 floating-label-form-group controls">
+       <span style='display:inline'>Title of Post.</span>
+       <%= f.text_field :title, :class => "form-control",:placeholder => "Name Me."%>
+       <p class="help-block text-danger"></p>
+     </div>
+    </div><!-- row control-group -->
+  <div class="row control-group">
+    <div class="form-group col-xs-12 floating-label-form-group controls">
+     
+      <span style='display:inline'>Post Written By:</span> <%= f.text_field :author, :class => "form-control" %>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div><!-- row control-group -->
+  <div class="form-group">
+    <%= f.label :post_image %>
+    <%= f.file_field :post_image %>
+    
+  </div>
+  <div class='form-group'>
+    <%= f.select :lang, options_for_select([["English","en"],["Spanish","es"]])%>
+   </div>
+    
+  <div class='form-group'>
+    <%= f.bootsy_area :description,rows: 50,id: "text_area"%>
+   </div>
+  <%= f.submit :class => ' btn btn-default btn-block' %>
+</div><!-- container end -->
+<style>
+  #text_area{
+    width: 100%;    
+  }
+  </style>
+<% end %>

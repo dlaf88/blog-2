@@ -1,0 +1,36 @@
+<header class="intro-header" style="background-image: url(https://diego-blog.s3.amazonaws.com/uploads/post/post_image/6/darkbackground.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Older Posts</h1>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+ </header>
+
+<% @posts.each do |post| %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href=<%= post_path(post)%>>
+                        <h2 class="post-title">
+                          <%= post.title %>
+                        </h2>
+                        <h3 class="post-subtitle">
+                          <%= truncate(strip_tags(post.description), length: 300)%>
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#"><%= post.author%></p>
+                </div>                
+            </div>
+        </div>
+    </div>
+   <hr>
+<% end %>
+<div align='center'>
+<%= will_paginate @posts %>
+</div>
+

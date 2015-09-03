@@ -20,4 +20,26 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  posts:
+    index:
+      headline: "Diego Lafuente Blog"
+      subheadline: "Entrepreneur, Lawyer, Rails Developer"
+      olderposts: "Older Posts"
+    show:
+      notice: "You were successful"
+        
+  layouts:
+    application:
+      navbar:
+        home: "Home"
+        about: "About"
+        contact: "Contact"
+        olderposts: "Older Posts"
+  routes:
+    new: "new"
+    edit: "edit"
+    post: "post"
+    posts: "posts"
+    olderposts: "olderposts"
+        
+    

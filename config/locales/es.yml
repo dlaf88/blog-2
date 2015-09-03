@@ -1,0 +1,21 @@
+es:
+  posts:
+    index:
+      headline: "El Blog de Diego Lafuente"
+      subheadline: "Emprendedor, Abogado, Programador de Ruby on Rails"
+      olderposts: "Articulos antiguos"
+    show:
+      notice: "Eres ok."
+  layouts:
+   application:
+     navbar:
+       home: "Casa"
+       about: "Acerca De"
+       contact: "Contactar"
+       olderposts: "Articulos antiguos"
+  routes:
+    new: "nuevo"
+    edit: "editar"
+    post: "articulo"
+    posts: "articulo"
+    olderposts: "articulo_antiguos"
