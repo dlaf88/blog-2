@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :authenticate, :only => [:edit,:update,:admin]
+  before_filter :authenticate, :only => [:edit,:new,:create,:update,:admin]
   def index
     if params[:locale].present?
       @posts = Post.where(lang: params[:locale]).last(3).reverse
@@ -63,12 +63,10 @@ class PostsController < ApplicationController
 
  protected
 
-def authenticate
-  if Rails.env == 'production'
+def authenticate  
     authenticate_or_request_with_http_basic do |username, password|
       username == ENV['HTTP_USER'] && password == ENV['HTTP_PASS']
-    end
-  end 
+    end   
 end
   
   
