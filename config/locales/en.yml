@@ -40,6 +40,8 @@ en:
       email: "Email"
       phone: "telephone"
       message: "Message"
+    email:
+      notice: "Success. Thank you for sending the message."
   layouts:
     application:
       navbar:

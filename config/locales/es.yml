@@ -19,6 +19,8 @@ es:
       email: "Email"
       phone: "telefono"
       message: "Mensaje"
+    email:
+      notice: "Gracias por enviar el mensaje."
   layouts:
    application:
      navbar:

@@ -9,8 +9,7 @@ Rails.application.routes.draw do
       get '/admin/', to: 'posts#admin'
       get '/about/contact/', to: 'about#contact'
       get '/about/', to: 'about#show'
-    end 
-
-    
+      match "/about/email" => "about#email", via: :post
+    end     
   
 end
